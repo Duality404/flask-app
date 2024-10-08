@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "misc/geminisong.py",
+        "src": "flask deployment/geminisong.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "misc/geminisong.py"
+        "dest": "flask deployment/geminisong.py"
       }
     ]
   }
